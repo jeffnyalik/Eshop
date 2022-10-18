@@ -14,13 +14,21 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 
+import { ApproutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ProductsHeaderComponent } from './components/products-header/products-header.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    ProductsHeaderComponent,
+    FiltersComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +44,9 @@ import { HeaderComponent } from './components/header/header.component';
     MatMenuModule,
     MatExpansionModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+
+    ApproutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

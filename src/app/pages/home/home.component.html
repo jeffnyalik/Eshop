@@ -1,0 +1,9 @@
+<mat-drawer-container [autosize]="true" class="min-h-full max-auto">
+    <mat-drawer mode="side" opened class="p-5 mb-4">
+        <app-filters (showCategory)="onShowCategory($event)"></app-filters>
+    </mat-drawer>
+    <mat-drawer-content class="p-6">
+        <app-products-header (columnsCountChange)="onColumnsCountChange($event)"></app-products-header>
+        {{categories}}
+    </mat-drawer-content>
+</mat-drawer-container>
